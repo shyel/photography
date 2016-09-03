@@ -1,0 +1,294 @@
+/****************************************
+*     COLORS
+* SeaFoam     = rgb(0, 148, 137)
+* Salmon      = rgb(226, 131, 130)
+* Gray        = rgb(48, 51, 51)
+* Gray(light) = rgb(167,178,178)
+*****************************************/
+
+
+
+
+/****************************************
+*     BASE
+*****************************************/
+body {
+  color: rgb(48, 51, 51);
+  font-family: 'Cormorant', serif;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+a {
+  text-decoration: none;
+  font-family: 'Cormorant', serif;
+  color: rgba(105, 105, 105, .8);
+}
+
+
+a:hover,
+a:focus,
+a:active {
+  color: rgb(74,74,74);
+  transition: color .2s ease-in-out;
+}
+
+h1 {
+  font-size: 3.75em;
+}
+
+.current {
+  border-bottom: 1px solid rgba(74,153,153, .9);
+}
+/****************************************
+*     BOX SIZE
+*****************************************/
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/****************************************
+*     CLEARFIX
+*****************************************/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/****************************************
+*     CONTAINER
+*****************************************/
+.container {
+ max-width:960px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px; 
+}
+
+
+/****************************************
+*    HEADER
+*****************************************/
+.top-header {
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+.logo {
+  font-size: 3em;
+  line-height: .8em;
+  font-family: 'Satisfy', cursive;
+  color: rgb(74,153,153);
+}
+
+.logo2 {
+ font-size: 1.15em;
+  text-transform: uppercase;
+  color: rgb(105, 105, 105);
+  letter-spacing: .5em;
+  margin-bottom: 40px;
+}
+
+.intro {
+ line-height: 1em;
+ padding-top: 10px;
+ color: rgba(105, 105, 105, .8);
+ font-family: 'Satisfy', cursive;
+ letter-spacing: .3em;
+
+}
+
+/****************************************
+*    NAVIGATION
+*****************************************/
+
+.top-nav {
+  margin-top: 40px;
+  padding: 20px; 
+  text-align: center;
+
+
+}
+.nav-item {
+  display: inline;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-size: .85em;
+}
+
+.nav-item:first-child {
+  padding-left: 0;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+
+
+/****************************************
+*    GALLERY
+*****************************************/
+
+.main-gallery {
+  border-bottom: 1px solid rgb(167,178,178);
+  overflow: hidden;
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px; 
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+
+.img-small {
+  height: auto;
+  width: 95%;
+  margin-bottom: 5%; 
+}
+
+
+
+.img-small:hover {
+  opacity: 0.9;
+}
+/****************************************
+*     footer
+*****************************************/
+.footer{
+  margin-top: 10px;
+  padding-bottom: 20px;
+  color: rgba(105, 105, 105, .7); 
+}
+
+small {
+  font-size: .8em;
+}
+/****************************************
+*     MODAL
+*****************************************/
+
+.modal-overlay {
+  background-color: #000;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: 0.4s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+}
+.modal {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  top: 10%;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -5%);
+  transition: 0.4s ease-in-out;
+  visibility: hidden;
+  z-index: 2;
+  width: auto;
+  height: auto;
+
+}
+
+
+
+.modal-close {
+  position: absolute;
+  font-size: 300%;
+  right: -10%;
+  top: -10%;
+  padding: 5px;
+
+}
+
+.modal-next,
+.modal-previous {
+  position: absolute;
+  font-size: 400%;
+  
+}
+
+.modal-next {
+top: 50%;
+ right: -10%;
+
+}
+
+.modal-image {
+  height: auto;
+
+}
+
+.modal-previous {
+top: 50%;
+left:  -10%;
+}
+.modal-media-title {
+  position: absolute;
+  top:20px;
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  left: 20px;
+  background-color: rgba(176,222,230, .2);
+}
+
+.nav-item {
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  border-right: 1px solid rgb(176,222,230);
+  font-size: 1em;
+}
+
+.nav-item:first-child {
+  padding-left: 0;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+
+
+
+
+
+
+
+
+

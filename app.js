@@ -57,7 +57,7 @@ $(document).ready(function(){
 
 
 
-
+  
   $('.js-modal-overlay').on('click', function() {
     $('.js-modal1').removeClass('is-visible')
     $('.js-modal2').removeClass('is-visible')
@@ -72,6 +72,15 @@ $(document).ready(function(){
   });
 
 
-  
+	$('.js-gallery-item').on('mouseenter', function(){
+		$(this).addClass('is-faded');
+	});
+
+	$('.js-gallery-item').on('mouseleave', function(){
+		$(this).removeClass('is-faded');
+	});
 
 });
+
+
+
