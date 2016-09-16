@@ -15,6 +15,7 @@
 body {
   color: rgb(48, 51, 51);
   font-family: 'Cormorant', serif;
+
   
 }
 
@@ -25,7 +26,6 @@ ul {
 
 a {
   text-decoration: none;
-  
   font-family: 'Cormorant', serif;
   color: rgba(105, 105, 105, .8);
 }
@@ -84,7 +84,10 @@ h1 {
   padding-right: 15px; 
 }
 
-
+.col-3 {
+  width: 33.33%;
+  float: left;
+}
 /****************************************
 *    HEADER
 *****************************************/
@@ -156,34 +159,42 @@ h1 {
 *****************************************/
 
 .main-gallery {
-  border-bottom: 1px solid rgba(74,153,153, .9);
+ 
   overflow: hidden;
-
+  background-color: rgb(243,243,243);
   
   /* Prevent vertical gaps */
   line-height: 0;
-   
+   /*
   -webkit-column-count: 3;
   -webkit-column-gap:   0px;
   -moz-column-count:    3;
   -moz-column-gap:      0px;
   column-count:         3;
   column-gap:           0px; 
+*/
+  
   padding-top: 40px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-bottom: 40px;
+}
 
+
+.gallery-item {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
 
 }
 
 
 .img-small {
   height: auto;
-  width: 95%;
-  margin-bottom: 5%; 
+  width: auto;
+
+ 
 }
-
-
 
 .img-small:hover {
   opacity: 0.9;
@@ -218,6 +229,8 @@ small {
   width: 100%;
   z-index: 1;
 }
+
+
 .modal {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
   top: 10%;

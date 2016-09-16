@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>michele trimmer</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700|Satisfy" rel="stylesheet">
-		<link rel="stylesheet" href="../css/reset.css">
-		<link rel="stylesheet" href="../css/main.css">
-	</head>
-	<body>
+<head>
+	<title>michele trimmer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1  minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Muli|Satisfy" rel="stylesheet">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
 
-		<!--HEADER-->
-		<div class="container">
+	<!--HEADER-->
+	<div class="container">
 		<header class="top-header">
-			<a href="../pages/index.html"><h1 class="logo">michele trimmer</h1></a>
-			<a href="../pages/index.html"><h2 class="logo2"> photography</h2></a>
+			<h1 class="logo"><a href="../index.html">
+				<img src ="../images/logo.svg"></a>
+			</h1>
+
 			<p class="intro">It's finding beauty in little things. That is photography for me.</p>
+			
 			<nav class="top-nav">
 				<ul>
-					<li class="nav-item"><a class="nav-link" href="../pages/all.html">All Photos</a></li>
-					<li class="nav-item"><a class="nav-link" href="../pages/nature.html">Nature</a></li>
-					<li class="nav-item"><a class="nav-link current" href="../pages/portrait.html">Portrait</a></li>
-					<li class="nav-item"><a class="nav-link" href="../pages/bw.html">Black & White</a></li>
-					<li class="nav-item"><a href="../pages/bw.html">Bio</a></li>
-					<li class="nav-item"><a href="../pages/bw.html">Contact</a></li>
+					<li class="nav-item"><a href="../index.html">Profile</a></li><!--
+					--><li class="nav-item"><a href="../pages/nature.html">Nature</a></li><!--
+					--><li class="nav-item"><a class="current" href="../pages/portrait.html">Portrait</a></li><!--
+					--><li class="nav-item"><a href="../pages/bw.html">Black &amp; White</a></li>
 				</ul>
 			</nav>
 		</header>
-		</div>
 
-		<!-- MODAL -->
-		<div class="container group">
+	
+	<!-- MODAL -->
+	
 
-			<div class="modal-overlay"></div>
+		<div class="modal-overlay"></div>
 
-			<div class="modal">
+		<div class="modal modal-portrait">
+			<div class="controls">
 				<a class="modal-close" href="#">&times;</a>
 				<a class="modal-next" href="#">&#8250;</a>
-				<a class="modal-previous" href="#">&#8249;</a>				
-				<img class="modal-image" src="">
-				<h3 class="modal-media-title">Alice McQueen</h3>	
+				<a class="modal-previous" href="#">&#8249;</a>
 			</div>
-
-			
-
-			<!-- PHOTO GALLERY -->
-			<main class="main-gallery">
-				<section class="gallery-row col-3">
-					<ul>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait1.jpg"></li>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait5.jpg"></li>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait4.jpg"></li>						
-					</ul>
-				</section>
+			<img class="modal-image image-portrait" src="">
 				
-				<section class="gallery-row col-3">
-					<ul>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait3.jpg"></li>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait2.jpg"></li>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait6.jpg"></li>
-											
-					</ul>
-				</section>
-
-				<section class="gallery-row col-3">
-					<ul>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait7.jpg"></li>
-						<li class="gallery-item"><img class="img-small" src="../images/portrait8.jpg"></li>
-						<li class="gallery-item "><img class="img-small" src="../images/portrait9.jpg"></li>
-					</ul>
-				</section>
-			</main>
 		</div>
 
-	<!-- FOOTER -->
-	<div class="container">
-	<footer class="footer group">
-		<small>&copy; All rights Reserved, Michele Trimmer</small>
-	</footer>
-	</div>
+		
 
-	<!-- JS-->
-	<script src="../js/app.js"></script>
-	</body>
+		<!-- PHOTO GALLERY -->
+		<main class="main-gallery main-portrait">
+			<section class="gallery-column">
+				<ul>
+					<li class="gallery-item"><img class="img-small" src="../images/portrait1.jpg"></li>
+					<li class="gallery-item"><img class="img-small" src="../images/portrait9.jpg"></li>
+					<li class="gallery-item"><img class="img-small" src="../images/portrait4.jpg"></li>						
+				</ul>
+			</section>
+				
+			<section class="gallery-column">
+				<ul>
+					<li class="gallery-item"><img class="img-small" src="../images/portrait3.jpg"></li>
+					<li class="gallery-item"><img class="img-small" src="../images/portrait2.jpg"></li>
+					<li class="gallery-item"><img class="img-small" src="../images/28.jpg"></li>
+										
+				</ul>
+			</section>
+
+			<section class="gallery-column">
+				<ul>
+					<li class="gallery-item"><img class="img-small" src="../images/portrait7.jpg"></li>
+					<li class="gallery-item"><img class="img-small" src="../images/portrait8.jpg"></li>
+					<li class="gallery-item"><img class="img-small" src="../images/5.jpg"></li>
+		
+				</ul>
+			</section>
+		</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer group">
+	<small>&copy; All rights Reserved, Michele Trimmer</small>
+</footer>
+</div>
+
+<!-- JS-->
+<script src="../js/app.js"></script>
+</body>
 </html>

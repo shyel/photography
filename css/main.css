@@ -1,54 +1,68 @@
 /****************************************
 *     COLORS
-* SeaFoam     = rgb(0, 148, 137)
-* Salmon      = rgb(226, 131, 130)
-* Gray        = rgb(48, 51, 51)
-* Gray(light) = rgb(167,178,178)
+body text = rgb(128,128,128)
+michele blue =  rgb(20,175,186)
+michele salmon = rgb(242,109,107)
+navigation = rgb(102,102,102)
+font is Ingra Regular for body text
+Ingra Wide for Navigation text
 *****************************************/
-
-
 
 
 /****************************************
 *     BASE
 *****************************************/
+html {
+  height: 100%;
+}
+
 body {
-  color: rgb(48, 51, 51);
-  font-family: 'Cormorant', serif;
-  
+  background: rgb(204,204,204);
+  color: rgb(128,128,128); 
+  height: 100%;
+  font-family: 'Muli', sans-serif;
+  position: relative;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
 }
 
-
 a {
   text-decoration: none;
-  font-family: 'Cormorant', serif;
   color: rgba(105, 105, 105, .8);
 }
-
 
 a:hover,
 a:focus,
 a:active {
-  color: rgb(74,74,74);
+  color: rgb(102,102,102);
   transition: color .2s ease-in-out;
 }
 
 h1 {
-  font-size: 3.75em;
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 2em; 
 }
 
 .current {
   border-bottom: 1px solid rgba(74,153,153, .9);
+  color: rgb(242,109,107);
+}
+
+
+img {
+  max-width: 100%;
+  white-space: nowrap;
 }
 /****************************************
 *     BOX SIZE
 *****************************************/
-
-
 *,
 *:before,
 *:after {
@@ -77,44 +91,36 @@ h1 {
 *     CONTAINER
 *****************************************/
 .container {
- max-width:960px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px; 
+   max-width:960px;
+   min-height: 100%;
+   background: rgb(255, 255, 255);
+   margin: 0 auto;
+   padding-bottom: 40px;
+   padding-left: 30px;
+   padding-right: 30px;
+   position: relative;
 }
-
 
 /****************************************
 *    HEADER
 *****************************************/
 .top-header {
-  margin-top: 40px;
+  padding-top: 40px;
   text-align: center;
-
 }
 
 .logo {
-  font-size: 3em;
-  line-height: .8em;
-  font-family: 'Satisfy', cursive;
-  color: rgb(74,153,153);
-}
-
-.logo2 {
- font-size: 1.15em;
-  text-transform: uppercase;
-  color: rgb(105, 105, 105);
-  letter-spacing: .5em;
-  margin-bottom: 40px;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 .intro {
- line-height: 1em;
+  margin-top: 20px;
  padding-top: 10px;
  color: rgba(105, 105, 105, .8);
  font-family: 'Satisfy', cursive;
  letter-spacing: .3em;
-
+ height: auto;
 }
 
 /****************************************
@@ -125,24 +131,18 @@ h1 {
   margin-top: 40px;
   padding: 20px; 
   text-align: center;
-
-
 }
+
 .nav-item {
   display: inline;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-transform: uppercase;
-  font-size: 1em;
-  font-size: .85em;
+  font-size: .95em;
 }
 
 .nav-item:first-child {
   padding-left: 0;
-}
-
-.nav-item:last-child {
-  border-right: none;
 }
 
 
@@ -152,39 +152,54 @@ h1 {
 *****************************************/
 
 .main-gallery {
-  border-bottom: 1px solid rgb(167,178,178);
-  overflow: hidden;
-  line-height: 0;
-  -webkit-column-count: 3;
-  -webkit-column-gap:   0px;
-  -moz-column-count:    3;
-  -moz-column-gap:      0px;
-  column-count:         3;
-  column-gap:           0px; 
-  padding-top: 40px;
-  padding-bottom: 20px;
-  padding-left: 10px;
+ line-height: 0;
+ -webkit-column-count: 3;
+   -webkit-column-gap: 2px;
+    -moz-column-count: 3;
+      -moz-column-gap: 2px;
+         column-count: 3;
+           column-gap: 3px;  
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-portrait {
+   margin-bottom: -5%;
 }
 
 
 .img-small {
   height: auto;
-  width: 95%;
-  margin-bottom: 5%; 
+  max-width:100%; 
+  white-space: nowrap;
 }
 
+.gallery-item {
+  max-height: 280px;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
 
+.landscape-item {
+  max-height: 180px;
+}
 
 .img-small:hover {
   opacity: 0.9;
 }
 /****************************************
-*     footer
+*    FOOTER
 *****************************************/
+
 .footer{
-  margin-top: 10px;
+  border-top: 1px solid rgb(128,128,128);
+  padding-top: 20px;
   padding-bottom: 20px;
-  color: rgba(105, 105, 105, .7); 
+  color: rgb(128,128,128);
+  position: absolute;
+  bottom: 0;
+  width: 95%;
 }
 
 small {
@@ -207,88 +222,289 @@ small {
   visibility: hidden;
   width: 100%;
   z-index: 1;
+
 }
-.modal {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
-  top: 10%;
+
+.modal { 
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  top: 20%;
   left: 50%;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   position: absolute;
-  transform: translate(-50%, -5%);
+  -webkit-transform: translate(-50%, -5%);
+          transform: translate(-50%, -5%);
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   visibility: hidden;
   z-index: 2;
-  width: auto;
-  height: auto;
+   border: none;
+   max-width: 100%;
+   vertical-align: middle;    
+}
 
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  white-space: nowrap;
+}
+
+.modal-portrait {
+   max-height: 98%;
+  width: auto;
+  top: 10%;
+}
+
+.image-portrait {
+  max-height: 98%;
+  width: auto;
+}
+
+
+.controls {
+  visibility: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 
 
 .modal-close {
   position: absolute;
-  font-size: 300%;
-  right: -10%;
-  top: -10%;
-  padding: 5px;
-
+  font-size: 150%;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(242,109,107, .2);
+  color: white;
+  text-align: center; 
 }
 
 .modal-next,
 .modal-previous {
   position: absolute;
-  font-size: 400%;
-  
+  font-size: 200%;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #fff;  
+  background-color: rgba(242,109,107, .2);
 }
 
 .modal-next {
-top: 50%;
- right: -10%;
-
-}
-
-.modal-image {
-  height: auto;
-
+ right: 0;
 }
 
 .modal-previous {
-top: 50%;
-left:  -10%;
-}
-.modal-media-title {
-  position: absolute;
-  top:20px;
-  font-size: 30px;
-  color: #fff;
-  padding: 10px;
-  left: 20px;
-  background-color: rgba(176,222,230, .2);
-}
-
-.nav-item {
-  display: inline;
-  padding-right: 10px;
-  padding-left: 10px;
-  text-transform: uppercase;
-  border-right: 1px solid rgb(176,222,230);
-  font-size: 1em;
-}
-
-.nav-item:first-child {
-  padding-left: 0;
-}
-
-.nav-item:last-child {
-  border-right: none;
+left: 0;
 }
 
 
 
+/****************************************
+*    PROFILE
+*****************************************/
+\
+.profile-small {
+  display: none;
+  width: 120px;
+  border-radius: 50%;
+float: left;
+margin-top: -20px;
+margin-bottom: 20px;
+}
+
+.story-container {
+  margin-bottom: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
+ padding: 30px 30px ;
+}
+
+
+/****************************************
+*     MEDIA SCREEN max-width: 1440px
+*****************************************/
+
+@media screen and (max-width: 1440px){
+
+.modal-portrait {
+  top: 4%;
+  height: 95%;
+}
+
+.modal-landscape{
+  top: 5%;
+  width: 65%;
+ }
+}
+/****************************************
+*     MEDIA SCREEN max-width: 1024px
+*****************************************/
+
+@media screen and (max-width: 1024px){
+  .modal-portrait {
+    top: 5%;
+  }
+
+  .modal-landscape{
+    top: 5%;
+    width: 95%;
+  }
+}
+/****************************************
+*     MEDIA SCREEN max-width: 768px
+*****************************************/
+
+@media screen and (max-width: 768px){
+  .gallery-item {
+    max-height: 190px;
+  }
+
+  .landscape-item {
+    max-height: 130px;
+  }
+
+  .modal-portrait {
+    top: 10%;
+    width: 75%;
+   
+  }
+
+  .landscape-tablet {
+    top: 1%;
+    width: 75%;
+    height: 100%;
+  }
+}
 
 
 
+/****************************************
+*     MEDIA SCREEN max-width: 425px
+*****************************************/
+
+@media screen and (max-width: 560px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .intro {
+   display: none;
+   height: auto;
+  }
+  
+  .main-gallery {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
 
+  .gallery-item {
+    max-height: 180px;
+  }
+  .landscape-item {
+    max-height: 120px;
+  }
+
+  .modal-landscape{
+    top: 25%;
+    width: 98%;
+  }
+
+  .modal-portrait {
+   width: 98%;
+  }
 
 
+  .modal-next {
+    display: none;
+  }
+  
+  .modal-previous {
+    display: none;
+  }
+
+  .nav-item {
+    display: inline-block;
+    padding: 0;
+    padding-right: 15px;
+  }
+
+  .nav-item:last-child {
+    border-right: none;
+    padding-right: 0;
+      }
+  }
+
+/****************************************
+*     MEDIA SCREEN max-width: 420px
+*****************************************/
+
+ @media screen and (max-height:420px) {
+  .modal-portrait {
+    width: auto;
+    top: 2%;
+    height: 98%;
+  }
+
+ .modal-landscape{
+    top: 8%;
+    width: 70%;
+  }
+  .top-nav {
+     padding: 0;
+  }
+
+  .nav-item {  
+     padding-right: 10px;
+  }  
+ }
+
+/****************************************
+*     MEDIA SCREEN max-width: 375
+*****************************************/
+@media screen and (max-width: 375px) {
+  
+    .top-nav {
+       padding: 0;
+    }
+
+    .nav-item {
+      padding-right: 10px;
+    }  
+
+    
+ .gallery-item {
+  max-height: 150px;
+}
+
+.landscape-item {
+  max-height: 100px;
+}
+ }
+/****************************************
+*     MEDIA SREEN max-width: 768
+*****************************************/
+
+
+@media screen and (max-width: 320px) {
+    
+    .nav-item {
+      text-align: left;
+      padding-right: 6px;
+      font-size: .85em; 
+    }  
+    .story-container {
+      margin-left: 10px;
+      margin-right: 10px;
+     padding: 15px 5px ;
+    }
+}
