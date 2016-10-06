@@ -1,90 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>michele trimmer</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1  minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<link href="https://fonts.googleapis.com/css?family=Muli|Satisfy" rel="stylesheet">
-	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
+	<head>
+		<title>michele trimmer</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1  minimum-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="description" content="photography" />
+		<link href="https://fonts.googleapis.com/css?family=Muli|Satisfy" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="icon" type="images/x-icon" href= "http://micheletrimmer.com/photography/images/favicon.png" />
+	</head>
+	<body>
 
 	<!--HEADER-->
 	<div class="container">
-		<header class="top-header">
+		<header>
 			<h1 class="logo"><a href="../index.html">
-				<img src ="../images/logo.svg"></a>
+				<img src ="../images/logo.svg" alt="michele-trimmer-logo" /></a>
 			</h1>
 
 			<p class="intro">It's finding beauty in little things. That is photography for me.</p>
 			
-			<nav class="top-nav">
+			<nav>
 				<ul>
 					<li class="nav-item"><a href="../index.html">Profile</a></li><!--
 					--><li class="nav-item"><a href="../pages/nature.html">Nature</a></li><!--
-					--><li class="nav-item"><a class="current" href="../pages/portrait.html">Portrait</a></li><!--
+					--><li class="nav-item"><a class="current" href="../pages/portrait_.html">Portrait</a></li><!--
 					--><li class="nav-item"><a href="../pages/bw.html">Black &amp; White</a></li>
 				</ul>
 			</nav>
 		</header>
 
 	
-	<!-- MODAL -->
-	
-
+		<!-- MODAL -->
 		<div class="modal-overlay"></div>
 
-		<div class="modal modal-portrait">
+		<div class="modal modal-portrait">	
 			<div class="controls">
-				<a class="modal-close" href="#">&times;</a>
-				<a class="modal-next" href="#">&#8250;</a>
-				<a class="modal-previous" href="#">&#8249;</a>
+				<button class="modal-nav modal-close" href="#">&times;</button>
+				<button class="modal-nav modal-previous" href="#">&#8249;</button>
+				<button class="modal-nav modal-next" href="#">&#8250;</button>
 			</div>
-			<img class="modal-image image-portrait" src="">
-				
+			<img class="modal-image" src="" alt="photo-large-version" />				
 		</div>
 
-		
-
 		<!-- PHOTO GALLERY -->
-		<main class="main-gallery main-portrait">
-			<section class="gallery-column">
-				<ul>
-					<li class="gallery-item"><img class="img-small" src="../images/portrait1.jpg"></li>
-					<li class="gallery-item"><img class="img-small" src="../images/portrait9.jpg"></li>
-					<li class="gallery-item"><img class="img-small" src="../images/portrait4.jpg"></li>						
-				</ul>
-			</section>
-				
-			<section class="gallery-column">
-				<ul>
-					<li class="gallery-item"><img class="img-small" src="../images/portrait3.jpg"></li>
-					<li class="gallery-item"><img class="img-small" src="../images/portrait2.jpg"></li>
-					<li class="gallery-item"><img class="img-small" src="../images/28.jpg"></li>
-										
-				</ul>
-			</section>
-
-			<section class="gallery-column">
-				<ul>
-					<li class="gallery-item"><img class="img-small" src="../images/portrait7.jpg"></li>
-					<li class="gallery-item"><img class="img-small" src="../images/portrait8.jpg"></li>
-					<li class="gallery-item"><img class="img-small" src="../images/5.jpg"></li>
-		
-				</ul>
-			</section>
+		<main class="main-gallery group">
+			<ul>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_1.jpg" alt="girl-apron" /></li>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_2.jpg" alt="girl-robinhood" /></li>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_3.jpg" alt="girl-bow-arrow" /></li>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_4.jpg" alt="guy-shield-stark" /></li>	
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_5.jpg" alt="girl-purplecostume" /></li>	
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_6.jpg" alt="girl-tealhair" /></li>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_7.jpg" alt="girl-flowerheadband" /></li>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_8.jpg" alt="girl-guycostume" /></li>	
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_9.jpg" alt="guy-bluearmor" /></li>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_10.jpg" alt="guy-blonde" /></li>
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_11.jpg" alt="guy-soldier" /></li>	
+				<li class="gallery-item"><img class="img-small" src="../images/portrait_12.jpg" alt="boy-ninjaturtle" /></li>
+			</ul>
 		</main>
 
+		<!-- FOOTER -->
+		<footer>
+			<div class="social-footer group">
+				<a  class="ig" href="https://www.instagram.com/trimmermichele/" target="_blank">instagram</a> 
+				<a  class="flickr" href="https://www.flickr.com/photos/136260878@N02/" target="_blank">flickr</a>
+				<a  class="linkedin" href="https://www.linkedin.com/in/trimmermichele" target="_blank">linkedIn</a>
+			</div>
+			<small>&copy; All rights Reserved, Michele Trimmer</small>
+		</footer>
 
-<!-- FOOTER -->
+	</div>
 
-<footer class="footer group">
-	<small>&copy; All rights Reserved, Michele Trimmer</small>
-</footer>
-</div>
+	<!-- JS-->
+	<script src="../js/app.js"></script>
 
-<!-- JS-->
-<script src="../js/app.js"></script>
 </body>
 </html>
